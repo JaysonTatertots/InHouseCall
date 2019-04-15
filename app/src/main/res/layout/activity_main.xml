@@ -93,12 +93,10 @@
     <Button
         android:id="@+id/deptsbtn"
         android:layout_width="170dp"
-        android:layout_height="100dp"
+        android:layout_height="97dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/departments"

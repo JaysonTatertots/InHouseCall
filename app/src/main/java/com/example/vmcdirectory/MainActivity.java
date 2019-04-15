@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.vmcdirectory.Clinics.clinics;
+import com.example.vmcdirectory.Departments.depts;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,6 +32,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(),Search.class);
+
+                startActivity(startIntent);
+
+            }
+        });
+
+        MainActivitybtn = (Button)findViewById(R.id.deptsbtn);
+        MainActivitybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),depts.class);
+
+                startActivity(startIntent);
+
+            }
+        });
+
+        MainActivitybtn = (Button)findViewById(R.id.clinicsbtn);
+        MainActivitybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), clinics.class);
 
                 startActivity(startIntent);
 

@@ -1,4 +1,4 @@
-package Units;
+package com.example.vmcdirectory.Clinics;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,28 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.vmcdirectory.Departments.rads;
 import com.example.vmcdirectory.R;
 
-import Units.eastsouth.south1;
-import Units.west.west1;
-
-public class West extends AppCompatActivity {
+public class clinics extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_west);
+        setContentView(R.layout.activity_clinics);
 
-        Button westbtn = (Button)findViewById(R.id.west1btn);
-        westbtn.setOnClickListener(new View.OnClickListener() {
+
+        Button deptsbtn = (Button)findViewById(R.id.ecubtn);
+        deptsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), west1.class);
+                Intent startIntent = new Intent(getApplicationContext(), ecu.class);
 
                 startActivity(startIntent);
 
             }});
-
 
     }
 }
